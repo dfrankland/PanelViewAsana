@@ -1,7 +1,7 @@
 {
 	"name": "Panel View for Asana",
 	"description": "Panelized extension for Asana",
-	"version": "2.3",
+	"version": "2.4",
 	"background": {
 		"scripts": [
 			"js/background.js",
@@ -31,7 +31,7 @@
 		},
 		{
 			"js": [
-				"js/keep-script.js"
+				"js/asana-script.js"
 			],
 			"matches": [
 				"https://app.asana.com/*"
