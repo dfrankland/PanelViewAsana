@@ -1,7 +1,7 @@
-Panel View for Keep
+Panel View for Asana
 ==========
 
-Panelized extension for Google's note-taking service Keep.
+Panelized extension for Asana's web app.
 
 After you download the zip, extract it to the folder location of your choice on your hard drive.
 In Chrome, click the menu button > Tools > Extensions. In the top right corner, make sure "Developer mode" is checked. Click the "Load unpacked extension" button. Navigate to the extension's folder, click it to select it, and click OK.
