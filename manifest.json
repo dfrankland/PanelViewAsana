@@ -1,6 +1,6 @@
 {
-	"name": "Panel View for Keep",
-	"description": "Panelized extension for Keep",
+	"name": "Panel View for Asana",
+	"description": "Panelized extension for Asana",
 	"version": "2.3",
 	"background": {
 		"scripts": [
@@ -17,8 +17,7 @@
 	},
 	"permissions": [
 		"tabs",
-		"https://drive.google.com/keep/*",
-        "https://keep.google.com/*"
+		"https://app.asana.com/*"
 	],
 	"content_scripts": [
 		{
@@ -26,8 +25,7 @@
 				"js/jquery-2.1.1.min.js"
 			],
 			"matches": [
-				"https://drive.google.com/keep/*",
-                "https://keep.google.com/*"
+				"https://app.asana.com/*"
 			],
 			"run_at": "document_start"
 		},
@@ -36,8 +34,7 @@
 				"js/keep-script.js"
 			],
 			"matches": [
-				"https://drive.google.com/keep/*",
-                "https://keep.google.com/*"
+				"https://app.asana.com/*"
 			],
 			"run_at": "document_end"
 		}
