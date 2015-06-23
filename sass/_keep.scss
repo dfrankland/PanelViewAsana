@@ -1,0 +1,114 @@
+.#{$navbar} .#{$navbar}-#{$navbar-right} {
+    background: none !important;
+}
+
+@media only screen and (max-width: $panel-width) {
+    .#{$active-note-wrapper}.#{$active-note-container}.#{$active-note} {
+        bottom: 0;
+        left: 0 !important;
+        right: 0;
+        top: 0 !important;
+        
+        > div:first-child {
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    .#{$note-wrapper} {
+        height: 100%;
+    }
+    
+    .#{$note-container} {
+        max-height: none !important;
+        
+        .#{$new-note-container} & {
+            height: auto !important;
+        }
+    }
+    
+    .#{$active-note} {
+        .#{$note-wrapper} {
+            display: flex;
+            flex-flow: column;
+        }
+
+        .#{$note-container} {
+            flex: 1 1 auto;
+            height: 1px; // seems necessary to trigger flex
+        }
+
+        .#{$note-toolbar} {
+            flex: 0 1 auto;
+        }
+    }
+    
+    body.collapse-list-view {
+        .#{$list-view} {
+            .#{$note-title} {
+                font-weight: normal !important;
+                font-family: $font-stack-body !important;
+                padding: 15px !important;
+            }
+
+            .#{$note-content},
+            .#{$note-content-list},
+            .#{$note-labels},
+            .#{$note-toolbar} {
+                display: none;
+            }
+
+            .#{$new-note-container-inside-wrapper} .#{$note-content},
+            .#{$note-title}[style="display: none;"] + .#{$note-content},
+            .#{$note-title}[style="display: none;"] + .#{$note-title-placeholder}[style="display: none;"] + .#{$note-content},
+            .#{$note-title}[style="display: none;"] + .#{$note-content-list} {
+                display: block !important;
+            }
+
+            .#{$note-title}[style="display: none;"] + .#{$note-content}[style="display: none;"],
+            .#{$note-title}[style="display: none;"] ~ .#{$note-content}:empty {
+                display: none !important;
+            }
+        }
+        
+        .#{$new-note-container} {
+            .#{$note-content},
+            .#{$note-title}[style="display: none;"] ~ .#{$note-content}:empty,
+            .#{$note-content-list},
+            .#{$note-labels},
+            .#{$note-toolbar} {
+                display: block !important;
+            }
+            
+            .#{$new-note-container-inside} .#{$note-toolbar},
+            .#{$note-content}[style="display: none;"] {
+                display: none !important;
+            }
+            
+            .#{$note-title} {
+                font-family: $font-stack-title !important;
+                font-weight: bold !important;
+                padding: 15px 15px 0 15px !important;
+            }
+        }
+        
+        .#{$active-note} {
+            .#{$note-title} {
+                font-weight: bold !important;
+                font-family: $font-stack-title !important;
+                padding: 10px 15px !important;
+            }
+
+            .#{$note-content},
+            .#{$note-content-list},
+            .#{$note-labels},
+            .#{$note-toolbar} {
+                display: block;
+            }
+            
+            .#{$note-title}[style="display: none;"] ~ .#{$note-content}:empty {
+                display: block !important;
+            }
+        }
+    }
+}

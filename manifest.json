@@ -1,11 +1,11 @@
 {
 	"name": "Panel View for Asana",
 	"description": "Panelized extension for Asana",
-	"version": "2.4",
+	"version": "2.8.2",
 	"background": {
 		"scripts": [
-			"js/background.js",
-			"js/events.js"
+			"js/background.min.js",
+			"js/events.min.js"
 		]
 	},
 	"browser_action": {
@@ -22,7 +22,7 @@
 	"content_scripts": [
 		{
 			"js": [
-				"js/jquery-2.1.1.min.js"
+				"js/jquery.min.js"
 			],
 			"matches": [
 				"https://app.asana.com/*"
@@ -30,6 +30,9 @@
 			"run_at": "document_start"
 		},
 		{
+			"css": [
+					"css/style.css"
+			],
 			"js": [
 				"js/asana-script.js"
 			],

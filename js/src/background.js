@@ -48,7 +48,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 		if (typeof request.type != 'undefined') {
 			ASANA_WINDOW_TYPE = request.type;
 		}
-
 		if (ASANA_TAB_ID == 0 && ASANA_WINDOW_ID > 0) {
 			chrome.windows.remove(ASANA_WINDOW_ID, function() {
 			});

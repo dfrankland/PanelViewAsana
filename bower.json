@@ -1,0 +1,25 @@
+{
+  "name": "PanelViewKeep",
+  "version": "2.8.2",
+  "homepage": "https://github.com/peiche/PanelViewKeep",
+  "authors": [
+    "Paul <peiche@gmail.com>"
+  ],
+  "description": "Panelized extension for Keep",
+  "keywords": [
+    "chrome",
+    "extension",
+    "keep"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}

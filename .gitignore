@@ -158,6 +158,12 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-
+bower_components/
+css/
+js/*.min.js
+node_modules/
+releases/
+report/
+s
 # Mac crap
 .DS_Store
